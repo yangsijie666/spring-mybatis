@@ -20,7 +20,7 @@
 
     <!-- 生成sqlSessionTemplate -->
     <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
-        <constructor-arg ref="sqlSessionFactory"/>
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
     </bean>
 
     <!-- 生成userDao对象 -->
