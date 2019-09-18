@@ -14,6 +14,7 @@
 
     <dependencies>
 
+        <!-- Spring相关依赖 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -26,6 +27,7 @@
             <version>4.3.18.RELEASE</version>
         </dependency>
 
+        <!-- mybatis相关依赖 -->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
@@ -38,7 +40,7 @@
             <version>8.0.17</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+        <!-- spring整合mybatis依赖 -->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
