@@ -27,10 +27,13 @@
             <!-- 配置哪些方法使用什么样的事务（方法名为user.mapper.xml中的方法名），配置事务的传播特性 -->
             <tx:method name="add" propagation="REQUIRED"/>
             <tx:method name="remove" propagation="REQUIRED"/>
+            <!-- read-only为true，则表示只读事务，从而忽略不需要的事务，因为读取不会修改数据，因此将其置为true即可 -->
             <tx:method name="get*" read-only="true"/>
+            <!-- 保险起见，最后匹配所有的方法 -->
             <tx:method name="*" propagation="REQUIRED"/>
         </tx:attributes>
     </tx:advice>
+    <!-- 配置aop，调用上面的通知（什么时候，做什么），决定切入点（在哪儿做） -->
     <aop:config>
         <aop:pointcut id="pointCut" expression="execution(* cn.sxt.dao.impl.*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="pointCut"/>
