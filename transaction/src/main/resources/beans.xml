@@ -24,7 +24,7 @@
     <!-- 配置事务通知 -->
     <tx:advice id="txAdvice" transaction-manager="txManager">
         <tx:attributes>
-            <!-- 配置哪些方法使用什么样的事务（方法名为user.mapper.xml中的方法名），配置事务的传播特性 -->
+            <!-- 配置哪些方法使用什么样的事务（方法名为切入点的方法名），配置事务的传播特性 -->
             <tx:method name="add" propagation="REQUIRED"/>
             <tx:method name="remove" propagation="REQUIRED"/>
             <!-- read-only为true，则表示只读事务，从而忽略不需要的事务，因为读取不会修改数据，因此将其置为true即可 -->
