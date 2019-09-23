@@ -6,4 +6,12 @@
     <select id="selectAll" resultType="cn.sxt.vo.User">
         SELECT * FROM user
     </select>
+
+    <insert id="add" parameterType="cn.sxt.vo.User">
+        INSERT INTO user(name, pwd) VALUE (#{name}, #{pwd})
+    </insert>
+    
+    <delete id="remove">
+        DELETEs FROM user WHERE id=#{id}
+    </delete>
 </mapper>
