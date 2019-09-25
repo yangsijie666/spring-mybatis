@@ -9,6 +9,7 @@
         <module name="mybatis03" />
         <module name="mybatis02" />
         <module name="transaction" />
+        <module name="mybatis04" />
         <module name="mybatis" />
       </profile>
     </annotationProcessing>

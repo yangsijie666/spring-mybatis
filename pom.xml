@@ -13,6 +13,7 @@
         <module>transaction</module>
         <module>mybatis02</module>
         <module>mybatis03</module>
+        <module>mybatis04</module>
     </modules>
 
     <dependencies>
