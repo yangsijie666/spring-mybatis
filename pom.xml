@@ -11,6 +11,8 @@
     <modules>
         <module>mybatis</module>
         <module>transaction</module>
+        <module>mybatis02</module>
+        <module>mybatis03</module>
     </modules>
 
     <dependencies>
